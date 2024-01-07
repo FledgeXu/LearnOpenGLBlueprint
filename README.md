@@ -43,6 +43,9 @@ This command should invokes the buiding tool that you set befoe.
 ./build/learnopengl
 ```
 
+## Utilities
+
+Your Text Ediotr may need the `compile_commands.json` to do autocompleting, you can build projects first then copy `compile_commands.json` from the `build` folder.
 
 ## Customization
 
