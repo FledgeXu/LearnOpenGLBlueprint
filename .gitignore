@@ -2,3 +2,5 @@ build/
 out/
 generated/
 .cache
+.idea
+cmake-build-debug/
