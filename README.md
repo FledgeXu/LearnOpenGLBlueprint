@@ -35,7 +35,7 @@ cmake -B build -G Ninja
 cmake -B build
 ```
 
-This command should invokes the buiding tool that you set befoe.
+This command should invokes the building tool that you set before.
 
 - Run the Executable File
 
