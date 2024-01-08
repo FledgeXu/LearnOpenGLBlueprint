@@ -43,7 +43,9 @@ FetchContent_MakeAvailable(glm)
 
 
 
+# If you want to add more source files, add here:
 add_executable(${EXECUTE_NAME} src/main.cpp src/stb_image.cpp)
-target_include_directories(${EXECUTE_NAME} PUBLIC include)
-target_compile_features(${EXECUTE_NAME} PUBLIC cxx_std_23)
-target_link_libraries(${EXECUTE_NAME} glfw glad glm)
+
+target_include_directories(${EXECUTE_NAME} PRIVATE include)
+target_compile_features(${EXECUTE_NAME} PRIVATE cxx_std_23)
+target_link_libraries(${EXECUTE_NAME} PRIVATE glfw glad glm)
