@@ -10,7 +10,7 @@ set(FETCHCONTENT_UPDATES_DISCONNECTED TRUE)
 # --- Fetch GLFW --------------------------------------------------------------
 FetchContent_Declare(
     glfw
-    GIT_REPOSITORY https://github.com/glfw/glfw
+    GIT_REPOSITORY https://github.com/glfw/glfw.git
     )
 
 # We don't need those, but feel free to comment them.
@@ -33,9 +33,17 @@ set(GLAD_GENERATOR "c" CACHE STRING "Language to generate the binding for")
 
 FetchContent_MakeAvailable(glad)
 
+# --- Fetch GLM --------------------------------------------------------------
+FetchContent_Declare(
+    glm 
+    GIT_REPOSITORY https://github.com/g-truc/glm.git
+    )
+
+FetchContent_MakeAvailable(glm)
+
 
 
 add_executable(${EXECUTE_NAME} src/main.cpp)
 target_include_directories(${EXECUTE_NAME} PUBLIC include)
 target_compile_features(${EXECUTE_NAME} PUBLIC cxx_std_23)
-target_link_libraries(${EXECUTE_NAME} glfw glad)
+target_link_libraries(${EXECUTE_NAME} glfw glad glm)
