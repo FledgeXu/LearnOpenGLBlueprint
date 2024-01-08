@@ -1,4 +1,4 @@
-**For now, this blueprint only be tested on macOS.**
+**For now, this blueprint only be tested on macOS and Linux.**
 
 ## Dependencies
 
@@ -12,6 +12,13 @@ You need those tools:
 
 ```bash
 brew install git cmake
+```
+### Linux
+
+Use your package manager to install dependencies
+
+```bash
+sudo apt install git cmake
 ```
 
 
