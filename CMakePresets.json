@@ -1,0 +1,30 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "minor": 14
+  },
+  "configurePresets": [
+    {
+      "name": "default",
+      "displayName": "LearnOpenGL Default Config",
+      "description": "Default LearnOpenGL build",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/build/install/",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "1"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "LearnOpenGLExample",
+      "description": "",
+      "displayName": "",
+      "configurePreset": "default",
+      "targets": [
+        "learnopengl"
+      ]
+    }
+  ]
+}

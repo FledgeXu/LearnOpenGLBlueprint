@@ -6,7 +6,7 @@ You need those tools:
 
 - `Git`
 
-- 'Python'
+- `Python`
 
 ### macOS
 
@@ -66,6 +66,13 @@ The output `learnopengl.exe` shoud be in `./build/Debug` folder.
 
 Your Text Ediotr may need the `compile_commands.json` to do autocompleting, you can build projects first then copy `compile_commands.json` from the `build` folder.
 
+### VSCode
+
+For VSCode user, you need `ms-vscode.cmake-tools`, `ms-vscode.cpptools` and `twxs.cmake` those three extensions. When you opened this project, VSCode should tell you to install them.
+
+Due to the limitation of `ms-vscode.cmake-tools`, you can not change current working dictionary of target program, highly recommend using terminal to launch target program.
+
 ## Customization
 
 Please Read [`CMakeLists.txt`](./CMakeLists.txt) for more information.
+

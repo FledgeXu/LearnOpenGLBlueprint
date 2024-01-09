@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.14...3.28)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-project(oepnglcpp LANGUAGES CXX)
-set(EXECUTE_NAME "learnopengl")
+project(learnopengl LANGUAGES CXX)
 
 # Include the FetchContent to download dependencies from git repos.
 include(FetchContent)
@@ -44,8 +43,8 @@ FetchContent_MakeAvailable(glm)
 
 
 # If you want to add more source files, add here:
-add_executable(${EXECUTE_NAME} src/main.cpp src/stb_image.cpp)
+add_executable(${PROJECT_NAME} src/main.cpp src/stb_image.cpp)
 
-target_include_directories(${EXECUTE_NAME} PRIVATE include)
-target_compile_features(${EXECUTE_NAME} PRIVATE cxx_std_23)
-target_link_libraries(${EXECUTE_NAME} PRIVATE glfw glad glm)
+target_include_directories(${PROJECT_NAME} PRIVATE include)
+target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_23)
+target_link_libraries(${PROJECT_NAME} PRIVATE glfw glad glm)
