@@ -1,24 +1,33 @@
-**For now, this blueprint only be tested on macOS and Linux.**
-
 ## Dependencies
 
 You need those tools:
 
-- `cmake >= 3.14`
+- `CMake >= 3.14`
 
 - `Git`
+
+- 'Python'
 
 ### macOS
 
 ```bash
-brew install git cmake
+brew install git cmake python
 ```
 ### Linux
 
 Use your package manager to install dependencies
 
 ```bash
-sudo apt install git cmake
+sudo apt install git cmake python
+```
+
+### Windows
+
+You need to install the Visual Studio, and:
+
+```bash
+winget install Git.Git Python CMake.
+
 ```
 
 
@@ -49,6 +58,9 @@ This command should invokes the building tool that you set before.
 ```bash
 ./build/learnopengl
 ```
+**For Windows User:**
+
+The output `learnopengl.exe` shoud be in `./build/Debug` folder.
 
 ## Utilities
 
