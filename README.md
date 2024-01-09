@@ -60,7 +60,7 @@ This command should invokes the building tool that you set before.
 ```
 **For Windows User:**
 
-The output `learnopengl.exe` shoud be in `./build/Debug` folder.
+The output `learnopengl.exe` should be in `./build/Debug` folder.
 
 ## Utilities
 
@@ -68,7 +68,7 @@ Your Text Ediotr may need the `compile_commands.json` to do autocompleting, you 
 
 ### VSCode
 
-For VSCode user, you need `ms-vscode.cmake-tools`, `ms-vscode.cpptools` and `twxs.cmake` those three extensions. When you opened this project, VSCode should tell you to install them.
+For VSCode user, you need `ms-vscode.cmake-tools`, `ms-vscode.cpptools` and `twxs.cmake` those three extensions. When you opened this project, VSCode should will tell you to install them.
 
 After opening project, you should use `>CMake: Select Configure Preset` to select build preset and `>CMake: Select Build Preset` to select target preset.
 
