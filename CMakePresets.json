@@ -5,14 +5,12 @@
   },
   "configurePresets": [
     {
-      "name": "default",
+      "name": "Default",
       "displayName": "LearnOpenGL Default Config",
       "description": "Default LearnOpenGL build",
       "binaryDir": "${sourceDir}/build",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_INSTALL_PREFIX": "${sourceDir}/build/install/",
-        "CMAKE_EXPORT_COMPILE_COMMANDS": "1"
+        "CMAKE_BUILD_TYPE": "Debug"
       }
     }
   ],
@@ -21,7 +19,7 @@
       "name": "LearnOpenGLExample",
       "description": "",
       "displayName": "",
-      "configurePreset": "default",
+      "configurePreset": "Default",
       "targets": [
         "learnopengl"
       ]
