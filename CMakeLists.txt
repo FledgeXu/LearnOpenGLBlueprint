@@ -42,9 +42,13 @@ FetchContent_MakeAvailable(glm)
 
 
 
-# If you want to add more source files, add here:
-add_executable(${PROJECT_NAME} src/main.cpp src/stb_image.cpp)
+# include all cpp files
+file(GLOB_RECURSE sources CONFIGURE_DEPENDS "src/*")
 
+# If you want to add more source files, add here:
+add_executable(${PROJECT_NAME})
+
+target_sources(${PROJECT_NAME} PRIVATE ${sources})
 target_include_directories(${PROJECT_NAME} PRIVATE include)
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_23)
 target_link_libraries(${PROJECT_NAME} PRIVATE glfw glad glm)
