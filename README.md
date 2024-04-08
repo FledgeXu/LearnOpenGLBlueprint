@@ -33,6 +33,8 @@ winget install Git.Git Python CMake.
 
 ## Usage
 
+![](./show.gif)
+
 - Create a build folder:
 
 ```bash
